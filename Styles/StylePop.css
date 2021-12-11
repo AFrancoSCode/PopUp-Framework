@@ -1,0 +1,33 @@
+.popUp-Content{
+    background: #e8e8e83c;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+    display: none;
+    justify-content: center;
+    text-align: center;
+}
+
+.popUp-Content-r{
+    display: flex;
+}
+
+.popUp-Content-center{
+    align-items: center;
+}
+
+.popUp-Content div{
+    position: absolute;
+}
+
+.popUp-Content div .close{
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: calc(0px + 0.5em);
+    font-weight: 500;
+    color: #202020;
+}
