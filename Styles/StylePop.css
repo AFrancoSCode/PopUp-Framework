@@ -20,11 +20,11 @@
     align-items: center;
 }
 
-.popUp-Content div{
+.popUp-Content .Content{
     position: absolute;
 }
 
-.popUp-Content div .close{
+.popUp-Content .Content .close{
     text-decoration: none;
     position: absolute;
     top: 0;
