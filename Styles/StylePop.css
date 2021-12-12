@@ -24,7 +24,7 @@
     position: absolute;
 }
 
-.popUp-Content div .close{
+.popUp-Content .Content .close{
     text-decoration: none;
     position: absolute;
     top: 0;
