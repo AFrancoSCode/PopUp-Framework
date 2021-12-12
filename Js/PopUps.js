@@ -46,25 +46,21 @@ class DesignPop{
             container.classList.remove('popUp-Content-r');
         }
         else if(e.id == 'submit'){
-            console.log('paso por aqui');
             let download = container.parentElement.querySelector('#download');
             download.value = container.querySelector('#overload').value;
             container.classList.remove('popUp-Content-r');
         }
         else if(e.id == 'autoSubmit'){
-            console.log('paso por aqui');
             let download = container.parentElement.querySelector('#download');
             download.value = e.value;
             container.classList.remove('popUp-Content-r');
         }
         else if(e.id == 'outautoSubmit'){
-            console.log('paso por aqui');
             let download = container.parentElement.querySelector('#download');
             download.innerHTML = e.value;
             container.classList.remove('popUp-Content-r');
         }
         else if(e.id == 'outSubmit'){
-            console.log('paso por aqui');
             let download = container.parentElement.querySelector('#download');
             download.innerHTML = container.querySelector('#overload').value;
             container.classList.remove('popUp-Content-r');
