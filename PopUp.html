@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container d-grid gap-2">
-        <div class="popUp-Container m-3 shadow">
+        <div class="popUp-Container m-3">
             <div class="popUp-Content">
                 <div class="bg-light p-4 rounded shadow Content">
                     <a href="#" id="close" class="close text-primary">x</a>
@@ -24,7 +24,7 @@
                 <button type="button" id="popButton" class="btn btn-primary btn-lg w-100">Alert</button>
             </div>
         </div>
-        <div class="popUp-Container m-3 shadow">
+        <div class="popUp-Container m-3">
             <div class="popUp-Content">
                 <div class="bg-light p-4 rounded shadow Content">
                     <a href="#" id="close" class="close text-primary">x</a>
@@ -40,7 +40,23 @@
                 <input type="hidden" id="download">
             </div>
         </div>
-        <div class="popUp-Container m-3 shadow">
+        <div class="popUp-Container m-3">
+            <div class="popUp-Content">
+                <div class="bg-light p-4 rounded shadow Content">
+                    <a href="#" id="close" class="close text-primary">x</a>
+                    <h3>Alert PopUp</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nemo.</p>
+                    <input type="text" id="overload" class="form-control" autocomplete="off">
+                    <button type="button" id="outSubmit" class="btn btn-primary mt-4">Aceptar</button>
+                </div>
+            </div>
+            <div class="popUp-Accioner">
+                <button type="button" id="popButton" class="btn btn-primary btn-lg w-100">out-Input</button>
+            </div>
+            <div id="download"></div>
+        </div>
+        <div class="popUp-Container m-3">
             <div class="popUp-Content Unclose">
                 <div class="bg-light p-4 rounded shadow Content">
                     <h3>Select PopUp</h3>
@@ -55,6 +71,23 @@
             <div class="popUp-Accioner">
                 <button type="button" id="popButton" class="btn btn-primary btn-lg w-100">Select</button>
                 <input type="hidden" id="download">
+            </div>
+        </div>
+        <div class="popUp-Container m-3">
+            <div class="popUp-Content Unclose">
+                <div class="bg-light p-4 rounded shadow Content">
+                    <h3>Select PopUp</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nemo.</p>
+                    <div class="d-flex justify-content-around">
+                        <button type="button" id="outautoSubmit" value="true" class="btn btn-primary">Aceptar</button>
+                        <button type="button" id="outautoSubmit" value="false" class="btn btn-secondary">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="popUp-Accioner">
+                <button type="button" id="popButton" class="btn btn-primary btn-lg w-100">out-Select</button>
+                <div id="download"></div>
             </div>
         </div>
     </div>

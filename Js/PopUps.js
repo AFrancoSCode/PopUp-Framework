@@ -54,5 +54,16 @@ class DesignPop{
             download.value = e.value;
             container.classList.remove('popUp-Content-r');
         }
+        else if(e.id == 'outautoSubmit'){
+            let download = container.parentElement.querySelector('#download');
+            download.innerHTML = e.value;
+            container.classList.remove('popUp-Content-r');
+        }
+        else if(e.id == 'outSubmit'){
+            let download = container.parentElement.querySelector('#download');
+            download.innerHTML = container.querySelector('#overload').value;
+            container.querySelector('#overload').value = "";
+            container.classList.remove('popUp-Content-r');
+        }
     }
 }
