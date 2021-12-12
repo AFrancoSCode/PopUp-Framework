@@ -39,28 +39,34 @@ class DesignPop{
         if(listclass.contains('popUp-center')){
             listclass.add('popUp-Content-center');
         }
+        if(listclass.contains('temp-popUp')){
+            setTimeout(function(){listclass.remove('popUp-Content-r')}, 3000);
+        }
+        if(listclass.contains('notBlur')){
+            listclass.add('popUp-Content-notblur');
+        }
     }
 
     popSetEvents(e, container){
         if((e.classList.contains('popUp-Content') || e.id == 'close') && !e.classList.contains('Unclose')){
             container.classList.remove('popUp-Content-r');
         }
-        else if(e.id == 'submit'){
+        if(e.id == 'submit'){
             let download = container.parentElement.querySelector('#download');
             download.value = container.querySelector('#overload').value;
             container.classList.remove('popUp-Content-r');
         }
-        else if(e.id == 'autoSubmit'){
+        if(e.id == 'autoSubmit'){
             let download = container.parentElement.querySelector('#download');
             download.value = e.value;
             container.classList.remove('popUp-Content-r');
         }
-        else if(e.id == 'outautoSubmit'){
+        if(e.id == 'outautoSubmit'){
             let download = container.parentElement.querySelector('#download');
             download.innerHTML = e.value;
             container.classList.remove('popUp-Content-r');
         }
-        else if(e.id == 'outSubmit'){
+        if(e.id == 'outSubmit'){
             let download = container.parentElement.querySelector('#download');
             download.innerHTML = container.querySelector('#overload').value;
             container.classList.remove('popUp-Content-r');

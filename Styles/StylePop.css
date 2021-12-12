@@ -12,6 +12,11 @@
     padding: 20px;
 }
 
+.popUp-Content-notblur{
+    backdrop-filter: none;
+    background: none;
+}
+
 .popUp-Content-r{
     display: flex;
 }
