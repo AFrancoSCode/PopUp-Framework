@@ -8,10 +8,12 @@ list.forEach(function(e){
         content.classList.add('popUp-Content-r');
 
         desingPop.popSetAttributes(content.classList);
-
         content.addEventListener('click', function(e){
             desingPop.popSetEvents(e.target, content);
         });
+        if(content.querySelector('#overload')){
+            content.querySelector('#overload').value = "";
+        }
     });
 });
 
@@ -46,12 +48,21 @@ class DesignPop{
         else if(e.id == 'submit'){
             let download = container.parentElement.querySelector('#download');
             download.value = container.querySelector('#overload').value;
-            container.querySelector('#overload').value = "";
             container.classList.remove('popUp-Content-r');
         }
         else if(e.id == 'autoSubmit'){
             let download = container.parentElement.querySelector('#download');
             download.value = e.value;
+            container.classList.remove('popUp-Content-r');
+        }
+        else if(e.id == 'outautoSubmit'){
+            let download = container.parentElement.querySelector('#download');
+            download.innerHTML = e.value;
+            container.classList.remove('popUp-Content-r');
+        }
+        else if(e.id == 'outSubmit'){
+            let download = container.parentElement.querySelector('#download');
+            download.innerHTML = container.querySelector('#overload').value;
             container.classList.remove('popUp-Content-r');
         }
     }
