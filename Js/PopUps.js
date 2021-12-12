@@ -46,6 +46,7 @@ class DesignPop{
         else if(e.id == 'submit'){
             let download = container.parentElement.querySelector('#download');
             download.value = container.querySelector('#overload').value;
+            container.querySelector('#overload').value = "";
             container.classList.remove('popUp-Content-r');
         }
         else if(e.id == 'autoSubmit'){

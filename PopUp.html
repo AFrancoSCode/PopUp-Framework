@@ -12,12 +12,12 @@
     <div class="container d-grid gap-2">
         <div class="popUp-Container m-3 shadow">
             <div class="popUp-Content">
-                <div class="bg-light p-4 rounded shadow">
+                <div class="bg-light p-4 rounded shadow Content">
                     <a href="#" id="close" class="close text-primary">x</a>
                     <h3>Alert PopUp</h3>
                     <hr>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nemo.</p>
-                    <button type="button" class="btn btn-primary">Aceptar</button>
+                    <button type="button" class="btn btn-primary" id="close">Aceptar</button>
                 </div>
             </div>
             <div class="popUp-Accioner">
@@ -26,7 +26,7 @@
         </div>
         <div class="popUp-Container m-3 shadow">
             <div class="popUp-Content">
-                <div class="bg-light p-4 rounded shadow">
+                <div class="bg-light p-4 rounded shadow Content">
                     <a href="#" id="close" class="close text-primary">x</a>
                     <h3>Alert PopUp</h3>
                     <hr>
@@ -42,12 +42,14 @@
         </div>
         <div class="popUp-Container m-3 shadow">
             <div class="popUp-Content Unclose">
-                <div class="bg-light p-4 rounded shadow">
+                <div class="bg-light p-4 rounded shadow Content">
                     <h3>Select PopUp</h3>
                     <hr>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nemo.</p>
-                    <button type="button" id="autoSubmit" value="true" class="btn btn-primary">Aceptar</button>
-                    <button type="button" id="autoSubmit" value="false" class="btn btn-secondary">Cancelar</button>
+                    <div class="d-flex justify-content-around">
+                        <button type="button" id="autoSubmit" value="true" class="btn btn-primary">Aceptar</button>
+                        <button type="button" id="autoSubmit" value="false" class="btn btn-secondary">Cancelar</button>
+                    </div>
                 </div>
             </div>
             <div class="popUp-Accioner">

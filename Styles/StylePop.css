@@ -20,7 +20,7 @@
     align-items: center;
 }
 
-.popUp-Content div{
+.popUp-Content .Content{
     position: absolute;
 }
 
