@@ -5,88 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/StylePop.css">
-    <title>PopUp Framework</title>
+    <title>Framework PopUp 2.0</title>
 </head>
 <body>
-    <div class="container">
-        <div class="popUp-Container">
-            <div class="popUp-Content Unclose">
-                <div class="Content">
-                    <a href="#" id="close" class="close">x</a>
-                    <h3>Alert PopUp</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nemo.</p>
-                    <button type="button">Aceptar</button>
-                </div>
-            </div>
-            <div class="popUp-Accioner">
-                <button type="button" id="popButton">Alert</button>
+    <!-- Alert PopUp -->
+    <div class="p-Container">
+        <div class="p-Content p-Blur" id="p-Close">
+            <div class="Pop">
+                <a id="p-Close" class="p-Close">x</a>
+                <h3>Alert</h3>
+                <hr>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, sint?</p>
+                <button type="button" id="p-Close">Aceptar</button>
             </div>
         </div>
-        <div class="popUp-Container">
-            <div class="popUp-Content">
-                <div class="Content">
-                    <a href="#" id="close" class="close">x</a>
-                    <h3>Input PopUp</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nemo.</p>
-                    <input type="text" id="overload">
-                    <button type="button" id="submit">Aceptar</button>
-                </div>
-            </div>
-            <div class="popUp-Accioner">
-                <button type="button" id="popButton">Input</button>
-                <input type="hidden" id="download">
-            </div>
-        </div>
-        <div class="popUp-Container">
-            <div class="popUp-Content">
-                <div class="Content">
-                    <a href="#" id="close" class="close">x</a>
-                    <h3>Input PopUp</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nemo.</p>
-                    <input type="text" id="overload">
-                    <button type="button" id="outSubmit">Aceptar</button>
-                </div>
-            </div>
-            <div class="popUp-Accioner">
-                <button type="button" id="popButton">out-Input</button>
-                <div id="download"></div>
-            </div>
-        </div>
-        <div class="popUp-Container">
-            <div class="popUp-Content Unclose">
-                <div class="Content">
-                    <a href="#" id="close" class="close">x</a>
-                    <h3>Select PopUp</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nemo.</p>
-                    <button type="button" id="autoSubmit" value="true">Aceptar</button>
-                    <button type="button" id="autoSubmit" value="false">Cancelar</button>
-                </div>
-            </div>
-            <div class="popUp-Accioner">
-                <button type="button" id="popButton">Select</button>
-                <input type="hidden" id="download">
-            </div>
-        </div>
-        <div class="popUp-Container">
-            <div class="popUp-Content Unclose">
-                <div class="Content">
-                    <h3>Select PopUp</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nemo.</p>
-                    <button type="button" id="outautoSubmit" value="true">Aceptar</button>
-                    <button type="button" id="outautoSubmit" value="false">Cancelar</button>
-                </div>
-            </div>
-            <div class="popUp-Accioner">
-                <button type="button" id="popButton">out-Select</button>
-                <div id="download"></div>
-            </div>
+        <div class="p-Accioner">
+            <button type="button" id="p-Button">Alert</button>
         </div>
     </div>
-    <script src="Js/PopUps.js"></script>
+    <!-- Input PopUp -->
+    <div class="p-Container">
+        <div class="p-Content p-Blur" id="p-Close">
+            <div class="Pop">
+                <a id="p-Close" class="p-Close">x</a>
+                <h3>Input</h3>
+                <hr>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, sint?</p>
+                <input type="text" id="p-overload">
+                <button type="button" id="p-Submit">Aceptar</button>
+            </div>
+        </div>
+        <div class="p-Accioner">
+            <button type="button" id="p-Button">Input</button>
+            <input type="hidden" id="p-download">
+        </div>
+    </div>
+    <!-- OutInput PopUp -->
+    <div class="p-Container">
+        <div class="p-Content p-Blur" id="p-Close">
+            <div class="Pop">
+                <a id="p-Close" class="p-Close">x</a>
+                <h3>Input</h3>
+                <hr>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, sint?</p>
+                <input type="text" id="p-overload">
+                <button type="button" id="p-outSubmit">Aceptar</button>
+            </div>
+        </div>
+        <div class="p-Accioner">
+            <button type="button" id="p-Button">Out-Input</button>
+            <div id="p-download"></div>
+        </div>
+    </div>
+    <!-- Alert PopUp -->
+    <div class="p-Container">
+        <div class="p-Content p-Blur" id="p-Close">
+            <div class="Pop">
+                <a id="p-Close" class="p-Close">x</a>
+                <h3>Select</h3>
+                <hr>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, sint?</p>
+                <button type="button" id="p-autoSubmit" value="true">Aceptar</button>
+                <button type="button" id="p-autoSubmit" value="false">Cancelar</button>
+            </div>
+        </div>
+        <div class="p-Accioner">
+            <button type="button" id="p-Button">Select</button>
+            <input type="hidden" id="p-download">
+        </div>
+    </div>
+<script src="Js/PopUps.js"></script>
 </body>
 </html>
