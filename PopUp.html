@@ -9,103 +9,79 @@
     <title>PopUp Framework</title>
 </head>
 <body>
-    <div class="container d-grid gap-2">
-        <div class="popUp-Container m-3">
-            <div class="popUp-Content">
-                <div class="bg-light p-4 rounded shadow Content">
-                    <a href="#" id="close" class="close text-primary">x</a>
-                    <h3>Alert PopUp</h3>
+    <!-- Alert PopUp -->
+    <div class="container">
+        <div class="p-Container m-3">
+            <div class="p-Content p-Blur" id="p-Close">
+                <div class="Pop bg-light p-4 rounded shadow">
+                    <a id="p-Close" class="p-Close text-primary">x</a>
+                    <h3>Alert</h3>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nemo.</p>
-                    <button type="button" class="btn btn-primary" id="close">Aceptar</button>
-                </div>
-            </div>
-            <div class="popUp-Accioner">
-                <button type="button" id="popButton" class="btn btn-primary btn-lg w-100">Alert</button>
-            </div>
-        </div>
-        <div class="popUp-Container m-3">
-            <div class="popUp-Content">
-                <div class="bg-light p-4 rounded shadow Content">
-                    <a href="#" id="close" class="close text-primary">x</a>
-                    <h3>Alert PopUp</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nemo.</p>
-                    <input type="text" id="overload" class="form-control" autocomplete="off">
-                    <button type="button" id="submit" class="btn btn-primary mt-4">Aceptar</button>
-                </div>
-            </div>
-            <div class="popUp-Accioner">
-                <button type="button" id="popButton" class="btn btn-primary btn-lg w-100">Input</button>
-                <input type="hidden" id="download">
-            </div>
-        </div>
-        <div class="popUp-Container m-3">
-            <div class="popUp-Content">
-                <div class="bg-light p-4 rounded shadow Content">
-                    <a href="#" id="close" class="close text-primary">x</a>
-                    <h3>Alert PopUp</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nemo.</p>
-                    <input type="text" id="overload" class="form-control" autocomplete="off">
-                    <button type="button" id="outSubmit" class="btn btn-primary mt-4">Aceptar</button>
-                </div>
-            </div>
-            <div class="popUp-Accioner">
-                <button type="button" id="popButton" class="btn btn-primary btn-lg w-100">out-Input</button>
-            </div>
-            <div id="download"></div>
-        </div>
-        <div class="popUp-Container m-3">
-            <div class="popUp-Content Unclose">
-                <div class="bg-light p-4 rounded shadow Content">
-                    <h3>Select PopUp</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nemo.</p>
-                    <div class="d-flex justify-content-around">
-                        <button type="button" id="autoSubmit" value="true" class="btn btn-primary">Aceptar</button>
-                        <button type="button" id="autoSubmit" value="false" class="btn btn-secondary">Cancelar</button>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, sint?</p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" id="p-Close" class="btn btn-primary">Aceptar</button>
                     </div>
                 </div>
             </div>
-            <div class="popUp-Accioner">
-                <button type="button" id="popButton" class="btn btn-primary btn-lg w-100">Select</button>
-                <input type="hidden" id="download">
+            <div class="p-Accioner">
+                <button type="button" id="p-Button" class="btn btn-primary btn-lg w-100">Alert</button>
             </div>
         </div>
-        <div class="popUp-Container m-3">
-            <div class="popUp-Content Unclose">
-                <div class="bg-light p-4 rounded shadow Content">
-                    <h3>Select PopUp</h3>
+        <!-- Input PopUp -->
+        <div class="p-Container m-3">
+            <div class="p-Content p-Blur" id="p-Close">
+                <div class="Pop bg-light p-4 rounded shadow">
+                    <a id="p-Close" class="p-Close text-primary">x</a>
+                    <h3>Input</h3>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nemo.</p>
-                    <div class="d-flex justify-content-around">
-                        <button type="button" id="outautoSubmit" value="true" class="btn btn-primary">Aceptar</button>
-                        <button type="button" id="outautoSubmit" value="false" class="btn btn-secondary">Cancelar</button>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, sint?</p>
+                    <input type="text" id="p-overload" class="form-control" autocomplete="off">
+                    <div class="d-flex justify-content-end">
+                        <button type="button" id="p-Submit" class="btn btn-primary mt-4">Aceptar</button>
                     </div>
                 </div>
             </div>
-            <div class="popUp-Accioner">
-                <button type="button" id="popButton" class="btn btn-primary btn-lg w-100">out-Select</button>
-                <div id="download"></div>
+            <div class="p-Accioner">
+                <button type="button" id="p-Button" class="btn btn-primary btn-lg w-100">Input</button>
+                <input type="hidden" id="p-download">
             </div>
         </div>
-        <!-- Ejemplos Alerts -->
-        <div class="container border border-secondary rounded">
-            <!-- Ejemplo 1 -->
-                    <h4 class="text-center">Alerts examples</h4>
-                    <div class="popUp-Container m-3">
-                        <div class="popUp-Content temp-popUp notBlur">
-                            <div class="bg-danger p-4 rounded shadow Content border border-danger">
-                                <a href="#" id="close" class="close text-light">x</a>
-                                <p class="m-0 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nemo.</p>
-                            </div>
-                        </div>
-                        <div class="popUp-Accioner">
-                            <button type="button" id="popButton" class="btn btn-primary btn-lg w-100">Alert 1</button>
-                        </div>
+        <!-- OutInput PopUp -->
+        <div class="p-Container m-3">
+            <div class="p-Content p-Blur" id="p-Close">
+                <div class="Pop bg-light p-4 rounded shadow">
+                    <a id="p-Close" class="p-Close text-primary">x</a>
+                    <h3>Out-Input</h3>
+                    <hr>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, sint?</p>
+                    <input type="text" id="p-overload" class="form-control" autocomplete="off">
+                    <div class="d-flex justify-content-end">
+                        <button type="button" id="p-outSubmit" class="btn btn-primary mt-4">Aceptar</button>
                     </div>
-            <!-- Ejemplo 2 -->
+                </div>
+            </div>
+            <div class="p-Accioner">
+                <button type="button" id="p-Button" class="btn btn-primary btn-lg w-100">Out-Input</button>
+                <div id="p-download"></div>
+            </div>
+        </div>
+        <!-- Alert PopUp -->
+        <div class="p-Container m-3">
+            <div class="p-Content p-Blur">
+                <div class="Pop bg-light p-4 rounded shadow">
+                    <h3>Select</h3>
+                    <hr>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, sint?</p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" id="p-autoSubmit" value="true" class="btn btn-primary">Aceptar</button>
+                        <button type="button" id="p-autoSubmit" value="false" class="btn btn-secondary ml-4">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-Accioner">
+                <button type="button" id="p-Button" class="btn btn-primary btn-lg w-100">Select</button>
+                <input type="hidden" id="p-download">
+            </div>
         </div>
     </div>
     <script src="Js/PopUps.js"></script>
