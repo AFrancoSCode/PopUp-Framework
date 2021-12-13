@@ -24,7 +24,8 @@
 .p-Container .p-Content .Pop .p-Close{
     text-decoration: none;
     cursor: pointer;
-    margin-left: calc(100% - 1em);
+    top: 0;
+    left: calc(100% - 1em);
     position: absolute;
 }
 
