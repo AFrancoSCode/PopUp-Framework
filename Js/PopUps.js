@@ -27,40 +27,29 @@ class Pop{
     }
     setPopContainer(e){
         let buttonContainer = this.setTotalContainer(e);
-        // if(buttonContainer.querySelector('.p-Slim')){
-        //     return buttonContainer.querySelector('.p-Slim');
-        // }
         return buttonContainer.querySelector('.p-Content');
     }
     popSetAttributes(listclass){
         if(!listclass.contains('.p-Content-v')){
             listclass.add('p-Content-v');
-            // if(listclass.contains('p-Slim')){
-            //     listclass.add('p-Slim-v');
-            // }
-            // else if(listclass.contains('p-Content')){
-            //     listclass.add('p-Content-v');
-            // }
         }
-        if(listclass.contains('p-Temp')){
-            setTimeout(function(){
-                listclass.remove('p-Content-v');
-            }, 3500);
+        if(listclass.contains('.p-Content-v')){
+
         }
     }
     popSetEvents(e, container){
-        if(e.id == 'p-Close'){
-            container.classList.remove('p-Content-v');
+        if(e.getAttribute('closepop') != null){
+            this.close(container);
         }
         if(e.id == 'p-Submit'){
             let download = container.parentElement.querySelector('#p-download');
             download.value = container.querySelector('#p-overload').value;
-            container.classList.remove('p-Content-v');
+            this.close(container);
         }
         if(e.id == 'p-autoSubmit'){
             let download = container.parentElement.querySelector('#p-download');
             download.value = e.value;
-            container.classList.remove('p-Content-v');
+            this.close(container);
         }
         // if(e.id == 'p-outautoSubmit'){
         //     let download = container.parentElement.querySelector('#p-download');
@@ -70,6 +59,19 @@ class Pop{
         if(e.id == 'p-outSubmit'){
             let download = container.parentElement.querySelector('#p-download');
             download.innerHTML = container.querySelector('#p-overload').value;
+            this.close(container);
+        }
+    }
+
+    close(container){
+        if(container.classList.contains('p-Animation')){
+            container.classList.add('p-Animation-r');
+            setTimeout(function(){
+                container.classList.remove('p-Content-v');
+                container.classList.remove('p-Animation-r');
+            }, 300);
+        }
+        else{
             container.classList.remove('p-Content-v');
         }
     }
