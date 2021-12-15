@@ -14,6 +14,8 @@ class Pop{
         let pop = new Pop();
         let content = pop.setTotalContainer(e);
         let contentPop = pop.setPopContainer(e);
+
+        contentPop.querySelectorAll('a[closepop]').forEach(i => i.innerHTML = "×");
     
         pop.popSetAttributes(contentPop.classList);
     
