@@ -6,7 +6,8 @@
     width: 100vw;
     height: 100vh;
     display: none;
-    justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .p-Container .p-Blur{
@@ -22,12 +23,13 @@
 }
 
 .p-Container .p-Content-v{
-    display: flex;
+    display: block;
 }
 
 .p-Container .p-Content .Pop{
-    position: absolute;
-    transform: translate(0, 0);
+    max-width: 500px;
+    position: relative;
+    margin: auto;
 }
 
 .p-Container .p-Content .Pop .p-Close{
