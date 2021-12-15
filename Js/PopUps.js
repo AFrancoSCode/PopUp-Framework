@@ -15,6 +15,8 @@ class Pop{
         let content = pop.setTotalContainer(e);
         let contentPop = pop.setPopContainer(e);
     
+        contentPop.querySelectorAll('a[closepop]').forEach(i => i.innerHTML = 'x');
+        
         pop.popSetAttributes(contentPop.classList);
     
         contentPop.addEventListener('click', function(e){
