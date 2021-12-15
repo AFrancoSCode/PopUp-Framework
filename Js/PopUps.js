@@ -3,21 +3,28 @@ let list = document.querySelectorAll('#p-Button');
 list.forEach(function(e){
     e.addEventListener('click', function(){
         let pop = new Pop();
+        pop.initializePop(e);
+        // initializePop(e);
+    });
+});
+
+class Pop{    
+    
+    initializePop(e){
+        let pop = new Pop();
         let content = pop.setTotalContainer(e);
         let contentPop = pop.setPopContainer(e);
-
+    
         pop.popSetAttributes(contentPop.classList);
-
+    
         contentPop.addEventListener('click', function(e){
             pop.popSetEvents(e.target, contentPop);
         });
         if(content.querySelector('#p-overload')){
             content.querySelector('#p-overload').value = "";
         }
-    });
-});
+    }    
 
-class Pop{
     setTotalContainer(e){
         let buttonContainer = e;
         while(!buttonContainer.classList.contains('p-Container')){
@@ -51,11 +58,6 @@ class Pop{
             download.value = e.value;
             this.close(container);
         }
-        // if(e.id == 'p-outautoSubmit'){
-        //     let download = container.parentElement.querySelector('#p-download');
-        //     download.innerHTML = e.value;
-        //     container.classList.remove('p-Content-v');
-        // }
         if(e.id == 'p-outSubmit'){
             let download = container.parentElement.querySelector('#p-download');
             download.innerHTML = container.querySelector('#p-overload').value;
@@ -76,3 +78,8 @@ class Pop{
         }
     }
 }
+
+setTimeout(function(){
+    let pop = new Pop();
+    pop.initializePop(document.querySelector('#p-offhand'));
+}, 3000);
