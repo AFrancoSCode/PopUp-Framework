@@ -72,10 +72,12 @@
 @keyframes on {
     0%{
         top: -20px;
+        height: calc(100vh + 20px);
         opacity: 0;
     }
     100%{
         top: 0px;
+        height: 100vh;
         opacity: 1;
     }
 }
@@ -83,10 +85,12 @@
 @keyframes off{
     0%{
         top: 0px;
+        height: 100vh;
         opacity: 1;
     }
     100%{
         top: -20px;
+        height: calc(100vh + 20px);
         opacity: 0;
     }
 }

@@ -11,3 +11,4 @@ Propiedades:
 2. Si se desea especificar el ancho maximo del modal hay que agregar el atributo size al div de Modal, luego espeficiar el tamaño que sera tomado por pixeles.
 3. Si se desea que el fondo sea oscuro hay que agregar la clase c-Darkbg en el elemento c-Modal, de lo contrario se agrega la clase c-Whitebg.
 4. Si se desea que el fondo sea borroso se agrega la clase Modal-blur en el elemento c-Modal.
+5. Si se desea que el modal este en el centro de la pantalla hay que agragar la clase Modal-center en Modal.
