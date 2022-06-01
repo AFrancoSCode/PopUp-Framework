@@ -21,7 +21,7 @@
 }
 
 .Modal-blur{
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(2px);
 }
 
 .c-Whitebg{
@@ -45,20 +45,23 @@
     height: min-content;
 }
 
+.c-Modal .Modal-back .Modal-center{
+    margin: auto;
+}
+
 .c-Modal-v{
     display: block;
 }
 
 .Modal-exit{
     user-select: none;
-    position: absolute;
-    width: 10px;
-    height: 10px;
+    position: relative;
+    width: 12px;
+    height: 12px;
     line-height: 10px;
-    right: 3px;
-    top: 3px;
     cursor: pointer;
     font-weight: bold;
+    float: right;
 }
 
 .p-Animation{
@@ -72,10 +75,12 @@
 @keyframes on {
     0%{
         top: -20px;
+        height: calc(100vh + 20px);
         opacity: 0;
     }
     100%{
         top: 0px;
+        height: 100vh;
         opacity: 1;
     }
 }
@@ -83,10 +88,12 @@
 @keyframes off{
     0%{
         top: 0px;
+        height: 100vh;
         opacity: 1;
     }
     100%{
         top: -20px;
+        height: calc(100vh + 20px);
         opacity: 0;
     }
 }
